@@ -51,6 +51,13 @@
 
 <!-- <div class="row justify-content-center"> -->
 
+
+  <!-- Button trigger modal -->
+
+
+
+
+
   <section id="galleryponpes">
 
 <div class="container container-fluid container-xl pb-10">
@@ -58,6 +65,8 @@
     <div class="carousel-inner position-center">
       <div class="carousel-item active" data-bs-interval="10000">
         <img src="image/gallery/g1.1.1.jpg" class="d-block w-100" alt="loading...">
+
+        
       </div>
       <div class="carousel-item" data-bs-interval="2000">
         <img src="image/gallery/g8.JPG" class="d-block w-100" alt="loading...">
@@ -188,35 +197,46 @@
     GALERY
   </div>
 </div>
+<!-- Modal -->
 
 
 <!-- santri -->
-<section id="santri" class="">
-<div class="container heigt-50">
-  <div class="row text-center text-dark justify-content-center" style="font-family:'Qahiri', sans-serif;">
-    <div class="col row text-center-danger justify-content-center">
-      <h2>santri ponpes darul muqimin</h2>
-    </div>
-  <div class="row">
-    <div class="col-sm-2 mb-3"> <!-- col artinya kolom. -md artinya layar medium(untuk responsive. -4 artinya 12 kolom di bagi 4 jadi jumlah gambar dalam 1 kolom adalah 3 buah gambar atau kolom mb-3 artinya margin bottom nya 3px-->
-      <div class="card width-10">
+<section id="santri" class="text-center">
+<h2 class="text-center color-strong">santri ponpes darul muqimin</h2>
 
-     <img src="image/santri/kaicin.png" class="card-img-top" alt="gambar1">
-      
-        <div class="card-body">
-          <p class="card-text text-danger">....</p>
+      <div class="baners container">
+
+        <img src="image/santri/1.png" class="baner">
+
+        <img src="image/santri/kaicin.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/mbay2.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/ipung.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/tami.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/alan.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/jaenal.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/rijal.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/pandi.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/sifa.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/kaicin.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/kaicin.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/kaicin.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/kaicin.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/kaicin.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/kaicin.png" class="thumbn" alt="gambar1">
+        <img src="image/santri/kaicin.png" class="thumbn" alt="gambar1">
       </div>
-   
-    </div> 
+        
+     
 
-  </div>
+
+
     
-    <div class="col-sm-2 mb-3">
+    <!-- <div class="col-sm-2 mb-3">
      
       <div class="card">
-      <img src="image/santri/mbay2.png" class="card-img-top" alt="gambar2">
-        <div class="card-body">
-      <p class="card-text text-danger">....</p>
+      <a type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="image/santri/mbay2.png" class="card-img-top" alt="gambar2">ahmad baihaki</a>
+       
+      
         </div>
       </div> 
 
@@ -275,11 +295,15 @@
       <p class="card-text text-danger">....</p>
         </div>
       </div>
+    
     </div>
+  
 
   </div>  
-  </div>
+  
 </div>
+  </div>
+</div> -->
 </section>
 
 <!-- alumni -->
@@ -376,7 +400,31 @@
 </div>
 
 
+<script>
+    const baners = document.querySelector('.baners');
+    const baner = document.querySelector('.baner');
+    const thumbn= document.querySelectorAll('.thumbn'); 
+    baners.addEventListener('click', function(e) {
+        if ( e.target.className == 'thumbn' ) {
+            baner.src = e.target.src;
+            baner.classList.add('fade');
+            setTimeout(function() {
+            baner.classList.remove('fade');
+            }, 500);
 
+        thumbs.forEach(function(thumbn) {
+              if( thumbn.classList.contains('active') ) {
+                  thumbn.classList.remove('active');
+              }  
+
+            });
+            e.target.classList.add('active');
+        }
+
+    });
+
+
+</script>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

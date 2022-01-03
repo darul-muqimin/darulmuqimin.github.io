@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/gallery.css"> -->
+    <!-- <link rel="stylesheet" href="style/mdb.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <title>gallery</title>
+    
+  </head>
+  <body>
+
+    <div class="container">
+        <img src="image/santri/1.jpg" class="card">
+        <img src="image/santri/2.jpg" class="thumb" alt="">
+        <img src="image/santri/3.jpg" class="thumb" alt="">
+        <img src="image/santri/4.jpg" class="thumb" alt="">
+
+
+       
+
+    </div>
+
+
+<script>
+
+    const container = document.querySelector('.container');
+    const card = document.querySelector('.card');
+    const thumbs= document.querySelectorAll('.thumb'); 
+    container.addEventListener('click', function(e) {
+        if ( e.target.className == 'thumb' ) {
+            card.src = e.target.src;
+            card.classList.add('fade');
+            setTimeout(function() {
+            card.classList.remove('fade');
+            }, 500);
+
+        thumbs.forEach(function(thumb) {
+              if( thumb.classList.contains('active') ) {
+                  thumb.classList.remove('active');
+              }  
+
+            });
+            e.target.classList.add('active');
+        }
+
+    });
+
+
+</script>
+</body>
+</html>
