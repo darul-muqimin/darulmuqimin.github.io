@@ -6,12 +6,17 @@ section
 
 .baners
 {
-
-	border: 1px solid white;
+    width: 3508px;
+    height: 2480px;
+	/* border: 1px solid white; */
 	margin: auto;
 	overflow: auto;
 	box-sizing: border-box;
 
+}
+
+.container{
+    width: 100%;
 }
 
 .baner{
@@ -19,27 +24,36 @@ section
 }
 
 .thumbn {
-    
-	width: 40px;
-   float: left;
+    max-width: 100%;
+	width: 470px;
+    height: 400px;
+    float: left;
     border: 1px solid white;
     box-sizing: border-box;
 }
-.thumbn:hover{
-	cursor: pointer;
-	opacity: 0.5;
-}
+
 
 @keyframes fadein {
     to{
         opacity: 1;
     }
 }
-.fade {
+.faded {
     opacity: 0;
     animation: fadein 0.5s forwards;
 }
 
-.active{
+.activ{
     opacity: 0.5;
+}
+
+.thumbnails{
+    width: 150px;
+    height: 95px;
+
+}
+
+.thumbnails:hover{
+	cursor: pointer;
+	opacity: 0.5;
 }
