@@ -19,7 +19,7 @@
   <body>
 
     <div class="container">
-        <img src="image/santri/1.jpg" class="card">
+        <img src="image/santri/1.jpg" class="card" type="hidden">
         <img src="image/santri/2.jpg" class="thumb" alt="">
         <img src="image/santri/3.jpg" class="thumb" alt="">
         <img src="image/santri/4.jpg" class="thumb" alt="">
@@ -38,18 +38,18 @@
     container.addEventListener('click', function(e) {
         if ( e.target.className == 'thumb' ) {
             card.src = e.target.src;
-            card.classList.add('fade');
-            setTimeout(function() {
-            card.classList.remove('fade');
-            }, 500);
+        //     card.classList.add('fade');
+        //     setTimeout(function() {
+        //     card.classList.remove('fade');
+        //     }, 500);
 
-        thumbs.forEach(function(thumb) {
-              if( thumb.classList.contains('active') ) {
-                  thumb.classList.remove('active');
-              }  
+        // thumbs.forEach(function(thumb) {
+        //       if( thumb.classList.contains('active') ) {
+        //           thumb.classList.remove('active');
+        //       }  
 
-            });
-            e.target.classList.add('active');
+        //     });
+        //     e.target.classList.add('active');
         }
 
     });
