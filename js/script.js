@@ -1,4 +1,4 @@
-const txtElement = ["Selamat Datang Di Website Pondok pesantren Darul Muqimin"];
+const txtElement = ["Selamat Datang Di Pondok pesantren Darul Muqimin"];
 let count=0;
 let txtIndex = 0;
 let currentTxt = '';
