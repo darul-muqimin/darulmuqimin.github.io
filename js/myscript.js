@@ -10,3 +10,7 @@
         }
 
     });
+
+
+    // const img = document.getElementById('san');
+    // img.style.width = '120px';
