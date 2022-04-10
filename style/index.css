@@ -39,7 +39,7 @@ h1{
 nav#nav2{
 	position: fixed;
     display: none;
-    background-color: rgba(8, 9, 8, 0.521);
+    
 	width: 100%;
 	z-index: 99;
 	padding-top: 15px;
@@ -50,15 +50,21 @@ nav#nav2{
 nav logo{
     justify-content: space-between;
     
+    
 }
 h4{
-    color: aliceblue;
-    justify-content: space-between;
+    position: absolute;
+    display: flex;
+    color: rgb(233, 243, 231);
+    justify-content: space-around;
     font-family: 'Lobster', cursive;
     letter-spacing:4px;
     font-size: 1rem;
-	margin-top: 10px;
-	margin-left: 0px;
+	margin-top: 20px;
+	margin-left: 5px;
+    font-family: 'Lavishly Yours', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Varela Round', sans-serif;
     
 }
 
@@ -76,6 +82,7 @@ h4{
 .menu-togle i{
     font-size: 3rem;
 	color: azure;
+    
 }
 
 @media screen and (max-width:665px){
