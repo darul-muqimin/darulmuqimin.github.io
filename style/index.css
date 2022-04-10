@@ -136,11 +136,15 @@ h4{
 
 @media only screen and (min-width: 667px) {
     nav#nav1{
-      display:relative;
+      display:flex;
       width: 100%;
+      font-size: small;
 
 
 
+    }
+    nav#nav1 .collapse{
+        margin-right: 50px;
     }
 
     nav#nav2{
