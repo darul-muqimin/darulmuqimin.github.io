@@ -23,3 +23,4 @@ let words = '';
    setTimeout(ngetik, 200);
 
 })();
+
