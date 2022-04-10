@@ -78,7 +78,7 @@ h4{
 	color: azure;
 }
 
-@media screen and (max-width:667px){
+@media screen and (max-width:665px){
     nav ul{
         position: absolute;
         right: 0;
@@ -104,12 +104,6 @@ h4{
         opacity: 1;
 		width: 25%;
 
-		
-		
-
-
-
-        
     }
 
     .menu-togle{
@@ -142,7 +136,11 @@ h4{
 
 @media only screen and (min-width: 667px) {
     nav#nav1{
-      display:flex;
+      display:relative;
+      width: 100%;
+
+
+
     }
 
     nav#nav2{
